@@ -31,22 +31,22 @@ const currentYear = new Date().getFullYear();
 
 document.getElementById("currentYear").textContent = currentYear;
 
-// for backToTop button
-// window.addEventListener('scroll', function top () {
-//     const btn = document.getElementById('backToTop');
-//     if (window.scrollY > 300) {
-//         btn.style.display = 'block';
-//     } else {
-//         btn.style.display = 'none';
-//     }
-//     console.log(top);
+//for backToTop button
+window.addEventListener('scroll', function top () {
+    const btn = document.getElementById('backToTop');
+    if (window.scrollY > 300) {
+        btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
+    }
+    console.log(top);
     
-// });
+});
 
-// // scroll to top smoothly
-// document.getElementById('backtop').addEventListener('click', function () {
-//     window.scrollTo({
-//         top: 0,
-//         behavior: 'smooth'
-//     })
-// })
+// scroll to top smoothly
+document.getElementById('backtop').addEventListener('click', function () {
+    window.scrollTo({
+        top: 20,
+        behavior: 'smooth'
+    })
+})
