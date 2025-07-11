@@ -46,7 +46,35 @@ window.addEventListener('scroll', function top () {
 // scroll to top smoothly
 document.getElementById('backtop').addEventListener('click', function () {
     window.scrollTo({
-        top: 20,
+        top: 0,
         behavior: 'smooth'
     })
 })
+
+// PROGRESS BAR
+
+// let boxes = document.querySelectorAll(".box");
+
+// window.onload = function () {
+//     setTimeout(() => {
+//        load_bars();
+//     }, 1000);
+// }
+
+// function load_bars(){
+//     boxes.forEach(box => {
+//         let line = box.querySelector(".line");
+//         let increasing_percentage = box.querySelector(".increasing-percentage");
+//         let total_percentage = box.querySelector(".total-percentage");
+
+//         let p = 0;
+//         let my_interval = setInterval(() => {
+//             p++;
+//             line.style.width = p + "%";
+//             increasing_percentage.innerHTML = p + "%";
+//             if (increasingPercentage.innerHTML == total-percentage.innerHTML) {
+//                 //clearInterval(my_interval)
+//             }
+//         }, 25);
+//     });
+// }
