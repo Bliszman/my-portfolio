@@ -7,6 +7,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: black;
     color: white;
@@ -108,44 +111,32 @@ body {
     margin-bottom: 20px;
 }
 
-/* .dynamic-text {
-    line-height: 80px;
-    height: 90px;
-    background-color: black;
-    overflow: hidden;
-    align-self: center;
-    margin-left: 15px;
-}
-.dynamic-text li {
-    list-style: none;
-    font-weight: 500;
-    font-size: 30px;
-}
-.dynamic-text li span {
-    position: relative;
-    color: white;
-}
-.dynamic-text li span::after {
-    content: "";
-    position: absolute;
-    color: white;
-    left: 0;
-    height: 50%;
-    width: 100%;
-    background: black;
-    border-left: 2px solid white;
-    animation: typing 1.5s steps(19) infinite;
-}
-@keyframes typing {
-    100%{
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-} */
-
-
 .texts-hero span {
     color: goldenrod;
+}
+
+/* for typewriter effect */
+.texts-hero h2 {
+    display: inline-block;
+    letter-spacing: 5px;
+    border-right: 5px solid white;
+    width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(15),
+    cursor .4s step-end infinite alternate;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* typing effect */
+@keyframes typing {
+    from { width: 0;}
 }
 
 .buttons {
@@ -343,7 +334,7 @@ body {
 .line {
     width: 30px;
     height: 1px;
-    background-color: goldenrod;
+    background-color: rgb(218, 165, 32);
     align-self: center;
     margin-top: 20px;
 }
@@ -385,7 +376,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    /* justify-content: space-between; */
 }
 
 .skills {
@@ -394,6 +384,48 @@ body {
     background-color: rgb(29, 28, 28);
     align-content: center;
     text-align: center;
+}
+
+/* progress section */
+.containers {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #313030;
+    margin-top: 40px;
+}
+.containers .progress-container {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.containers .progress-container h4 {
+    margin: 0 0 15px 15px;
+    letter-spacing: .5px;
+}
+.containers .progress-container .progress-bar {
+    position: relative;
+    width: 500px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 3px 4px 5px 0px rgb(224 137 22 / .75);
+}
+.containers .progress-container .progress-bar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #fff;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(218, 165, 32, 1) 50%, rgba(221, 206, 2, 1) 100%);
+    transition: width .5s linear;
 }
 
 .skills:hover {
@@ -410,50 +442,22 @@ body {
     width: 200px;
 }
 
-/* .progress-bar {
-    width: 500px;
-    background-color: #313030;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0px 10px 30px -15px goldenrod;
-    margin: auto;
-    margin-top: 50px;
+.project-section {
+    padding: 1rem 6rem;
+    margin-top: 70px;
 }
-.progress-bar h3 {
-    font-size: 40px;
-    text-align: center;
-}
-.progress-bar .box {
-    width: 100%;
-    margin: 10px 0px;
-}
-.box .progress-box {
+.project-images {
     display: flex;
-    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    gap: 20px;
 }
-.box .progress-box .progress {
-    width: 100%;
-    height: 10px;
-    background-color: #fff;
-    border-radius: 100px;
-    overflow: hidden;
-    position: relative;
+
+.project-section img {
+    width: 200px;
+    height: 400px;
 }
-.box .progress-box .progress .line {
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    background-color: goldenrod;
-    border-radius: 100px;
-    transition: 0.2s;
-}
-.box .progress-box .increasing-percentage {
-    margin-left: 10px;
-    font-size: 25px;
-}
-.box .progress-box .total-percentage {
-    display: none;
-} */
+
 /* contact section */
 .contact-section {
     padding: 1rem 6rem;
@@ -641,6 +645,10 @@ footer {
     margin-top: 50px;
 }
 
+.social-icons a {
+    color: goldenrod;
+}
+
 .social-icons i {
     font-size: 20px;
     padding: 10px;
@@ -654,31 +662,42 @@ footer {
     margin-top: 50px;
 }
 
-#backToTop {
-    position: fixed;
+/* back to top button */
+a .fa-arrow-up-wide-short {
     bottom: 30px;
-    right: 30px;
-    display: none;
-    background-attachment: goldenrod;
-    color: black;
-    border: none;
-    padding: 10px 15px;
-    font-size: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-#backToTop a {
-    text-decoration: none;
-    color: black;
-}
-
-#backToTop:hover a {
-    background-color: #555;
+    right: 50px;
+    width: fit-content;
     color: goldenrod;
+    padding: 10px;
+    background-color: #555;
+    border-radius: 10px;
 }
+.scroll-to-top {
+    animation-name: appear;
+    animation-timeline: scroll(y);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        display: none;
+        position: fixed;
+    }
+    3% {
+        opacity: 0;
+        display: none;
+    }
+    3.5% {
+        opacity: 1;
+        display: block;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+        position: fixed;
+    }
+}
+
 
 /* media query */
 
@@ -717,18 +736,23 @@ footer {
     .texts-hero {
         padding: 50px;
     }
-
+    .images-hero {
+        margin: auto;
+    }
     .about-section {
         flex-direction: column;
         padding-left: 0;
         padding-right: 0;
     }
+    .about-design {
+        margin: auto;
+    }
     .about-texts {
         padding-left: 50px;
-        padding-right: 0;
+        padding-right: 15px;
     }
     .about-texts p {
-        margin-right: 0;
+        margin-right: 8px;
     }
     .services-section {
         flex-direction: column;
@@ -739,27 +763,36 @@ footer {
     .div h1 {
         margin-left: 40px;
     }
+    .div {
+        margin: auto;
+    }
     .services-section p {
-        margin-left: 120px;
+        margin: auto;
+        margin-bottom: 30px;
     }
     .service {
-        margin-left: 120px;
-        margin-right: 0;
+        margin: auto;
     }
 
     .skill-section {
         flex-direction: column;
-        /* padding: 70px; */
     }
 
     .skill-div {
         margin: auto;
     }
-    .skill-images {
-        margin: 50px;
-        margin-left: 150px;
+    .skills {
+        margin: auto;
     }
-
+    .containers {
+        background-color: black;
+    }
+    .project-images{
+        flex-direction: column;
+    }
+    .pro-img {
+        margin: auto;
+    }
     .contact-section {
         /* flex-direction: column; */
         padding: 50px;
