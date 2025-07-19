@@ -15,48 +15,50 @@
 
 <body>
     <!-- header section start -->
-    <header id="1">
-        <div class="header-section">
-            <!-- <div class="logo"> -->
-            <img src="images/logo1.png" alt="logo">
-            <!-- </div> -->
-            <nav class="nav-section">
-                <ul class="navlinks" id="navLinks">
-                    <li><a href="#1">HOME</a></li>
-                    <li><a href="#2">ABOUT</a></li>
-                    <li><a href="#3">SERVICES</a></li>
-                    <li><a href="#4">SKILLS</a></li>
-                    <li><a href="#5">PROJECTS</a></li>
-                    <li><a href="#6">CONTACTS</a></li>
-                </ul>
-            </nav>
-            <i class="fa-solid fa-bars" onclick="togglebar()"></i>
-        </div>
-        <section class="hero-section">
-            <div class="texts-hero">
-                <h3>HELLO!</h3>
-                <h1>I'm <span>Igboanugo <br> Divine</span></h1>
-                <h2>A WEB-DEVELOPER</h2>
-                <div class="social-icons">
-                    <div><a href="https://x.com/bliszman124" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></div> &nbsp;
-                    <div><a href="https://www.facebook.com/divine.favour.bliss123?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div> &nbsp;
-                    <div><a href="https://www.instagram.com/bliszman124/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div> &nbsp;
-                    <div><a href="https://www.linkedin.com/in/divine-favour-igboanugo-3a67a3366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-                </div>
-                <div class="buttons">
-                    <div class="hire"><a href="https//wa.me/2349015250061?text=I'm%20interested%20in%20%services">Hire Me</a></div>
-                    <div class="works"><a href="#5">My Works</a></div>
-                </div>
-            </div>
-            <div class="images-hero">
-                <img src="images/myPicture.png" alt="my-image">
-            </div>
-        </section>
+    <header class="header-section">
+        <!-- <div class="logo"> -->
+        <img src="images/logo1.png" alt="logo">
+        <!-- </div> -->
+        <nav class="nav-section">
+            <ul class="navlinks" id="navLinks">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-bars" onclick="togglebar()"></i>
     </header>
     <!-- header section ends here -->
-
+    <section class="hero-section" id="home">
+        <div class="texts-hero">
+            <h3>HELLO!</h3>
+            <h1>I'm <span>Igboanugo <br> Divine</span></h1>
+            <h2>A WEB-DEVELOPER</h2>
+            <div class="social-icons">
+                <div><a href="https://x.com/bliszman124" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                </div> &nbsp;
+                <div><a href="https://www.facebook.com/divine.favour.bliss123?mibextid=ZbWKwL" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a></div> &nbsp;
+                <div><a href="https://www.instagram.com/bliszman124/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></div> &nbsp;
+                <div><a href="https://www.linkedin.com/in/divine-favour-igboanugo-3a67a3366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+            </div>
+            <div class="buttons">
+                <div class="hire"><a href="https//wa.me/2349015250061?text=I'm%20interested%20in%20%services">Hire
+                        Me</a></div>
+                <div class="works"><a href="#5">My Works</a></div>
+            </div>
+        </div>
+        <div class="images-hero">
+            <img src="images/myPicture.png" alt="my-image">
+        </div>
+    </section>
     <!-- about section -->
-    <section class="about-section" id="2">
+    <section class="about-section" id="about">
         <div class="images-hero"><img src="images/myPicture.png" alt=""></div>
         <div class="about-texts">
             <div class="about-design">
@@ -89,7 +91,7 @@
     <!-- about section ends -->
 
     <!-- services section starts here -->
-    <section class="services-section" id="3">
+    <section class="services-section" id="services">
         <div class="div">
             <h1 class="first-text">Services</h1>
             <h1 class="second-text">Services</h1>
@@ -131,7 +133,7 @@
     <!-- end of services section -->
 
     <!-- skill section starts -->
-    <section class="skill-section" id="4">
+    <section class="skill-section" id="skills">
         <div class="skill-div">
             <h1 class="skill-h1">My Skills</h1>
             <h1 class="skill">Skills</h1>
@@ -182,19 +184,21 @@
     <!-- skills section ends -->
 
     <!-- projects section starts -->
-    <section class="project-section" id="5">
+    <section class="project-section" id="projects">
         <div class="div">
             <h1 class="first-text">Projects</h1>
             <h1 class="second-text">Projects</h1>
         </div>
         <div class="project-images">
             <div class="pro-img">
-                <a href="https://25b-blog-project-cp9f.vercel.app/" target="_blank"><img src="images/blog-project.jpg" alt="project1"></a>
+                <a href="https://25b-blog-project-cp9f.vercel.app/" target="_blank"><img src="images/blog-project.jpg"
+                        alt="project1"></a>
 
                 <h4>Project 1</h4>
             </div>
             <div class="pro-img">
-                <a href="https://group1-school-management-website.vercel.app/" target="_blank"><img src="images/group-project.jpg" alt=""></a>
+                <a href="https://group1-school-management-website.vercel.app/" target="_blank"><img
+                        src="images/group-project.jpg" alt=""></a>
 
                 <h4>Project 2</h4>
             </div>
@@ -203,7 +207,7 @@
     <!-- projects section ends -->
 
     <!-- contacts section starts here -->
-    <section class="contact-section" id="6">
+    <section class="contact-section" id="contact">
         <div class="contact-text">
             <h1 class="contact-me">Contact Me</h1>
             <h1 class="contact">Contact</h1>
@@ -239,15 +243,13 @@
         <div class="form-image">
             <img src="images/image1.png" alt="image">
         </div>
-        <div class="form-div">
-            <form action="post">
-                <input type="text" placeholder="Your Name" name="name" required> <br> <br>
-                <input type="email" placeholder="Your Email" name="email-address" required> <br> <br>
-                <input type="text" placeholder="Subject" name="subject"> <br> <br>
-                <textarea name="comments" id="comment" placeholder="Message"></textarea> <br> <br>
-                <button type="submit">SEND MESSAGE</button>
-            </form>
-        </div>
+        <form action="post" class="form-div">
+            <input type="text" placeholder="Your Name" name="name" required> <br> <br>
+            <input type="email" placeholder="Your Email" name="email-address" required> <br> <br>
+            <input type="text" placeholder="Subject" name="subject"> <br> <br>
+            <textarea name="comments" id="comment" placeholder="Message"></textarea> <br> <br>
+            <button type="submit">SEND MESSAGE</button>
+        </form>
     </section>
     <!-- end of form section -->
 
@@ -282,16 +284,20 @@
             </div>
         </div>
         <div class="social-icons">
-            <div><a href="https://x.com/bliszman124" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></div> &nbsp;
-            <div><a href="https://www.facebook.com/divine.favour.bliss123?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div> &nbsp;
-            <div><a href="https://www.instagram.com/bliszman124/"><i class="fa-brands fa-instagram" target="_blank"></i></a></div> &nbsp;
-            <div><a href="https://www.linkedin.com/in/divine-favour-igboanugo-3a67a3366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+            <div><a href="https://x.com/bliszman124" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></div>
+            &nbsp;
+            <div><a href="https://www.facebook.com/divine.favour.bliss123?mibextid=ZbWKwL" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a></div> &nbsp;
+            <div><a href="https://www.instagram.com/bliszman124/"><i class="fa-brands fa-instagram"
+                        target="_blank"></i></a></div> &nbsp;
+            <div><a href="https://www.linkedin.com/in/divine-favour-igboanugo-3a67a3366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
         </div>
         <div class="copyright-div">
             <p>Copyright Blisz Codecademy &copy;<span id="currentYear"></span> All Rights Reserved</p>
         </div>
+        <a href="#"><i class="fa-solid fa-arrow-up-wide-short scroll-to-top"></i></a>
     </footer>
-    <a href="#"><i class="fa-solid fa-arrow-up-wide-short scroll-to-top"></i></a>
     <script src="js/portfolio.js"></script>
 </body>
 
