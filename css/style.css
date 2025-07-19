@@ -798,10 +798,6 @@ a .fa-arrow-up-wide-short {
         padding-left: 0;
     }
 
-    .div {
-        margin: auto;
-    }
-
     .services-section p {
         margin: auto;
         margin-bottom: 30px;
@@ -816,6 +812,11 @@ a .fa-arrow-up-wide-short {
     }
 
     .skill-div {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .div {
         margin: auto;
     }
 
@@ -836,7 +837,6 @@ a .fa-arrow-up-wide-short {
     }
 
     .contact-section {
-        /* flex-direction: column; */
         padding: 50px;
     }
 
